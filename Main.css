@@ -1,0 +1,70 @@
+
+
+.TextBox {
+    display:inline-block;
+    position:absolute;
+    border-bottom:1px dotted #666;
+    text-align:left;
+    margin-left:15px;
+    transition:opacity 0.6s;
+    opacity:0;
+}
+
+
+
+.TextBox .right {
+    min-width:200px;
+    max-width:400px;
+    transform:translate(0, -50%);
+    color:#EEEEEE;
+    background-color:#444444;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:visible;
+
+
+}
+
+.ImagesShown{
+
+    max-height: 210px;
+    object-fit: cover; object-position:
+        center;
+}
+
+.TextBox .right img {
+    width:300px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius:8px 8px 0 0;
+
+}
+.TextBox .text-content {
+    padding:10px 20px;
+}
+
+.TextBox .right i {
+    position:absolute;
+    top:50%;
+    right:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+.TextBox .right i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    left:0;
+    top:50%;
+    transform:translate(50%,-50%) rotate(-45deg);
+    background-color:#444444;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
